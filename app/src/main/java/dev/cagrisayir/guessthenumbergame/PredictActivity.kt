@@ -1,22 +1,21 @@
 package dev.cagrisayir.guessthenumbergame
 
+import android.annotation.SuppressLint
 import android.content.Intent
-import android.opengl.Visibility
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import dev.cagrisayir.guessthenumbergame.databinding.ActivityPredictBinding
 import kotlin.random.Random
-import kotlin.random.nextInt
 
 class PredictActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPredictBinding
     private var health = 5
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
