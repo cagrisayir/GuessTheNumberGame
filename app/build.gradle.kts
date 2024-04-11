@@ -7,6 +7,10 @@ android {
     namespace = "dev.cagrisayir.guessthenumbergame"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "dev.cagrisayir.guessthenumbergame"
         minSdk = 19
